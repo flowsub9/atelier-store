@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm run build)",
+      "Bash(pnpm run typecheck)",
+      "Bash(pnpm run lint)",
+      "Bash(git status)",
+      "Bash(git diff *)"
+    ],
+    "ask": ["Bash(git push *)"],
+    "deny": ["Read(.env)", "Read(.env.*)", "Bash(cat .env*)"]
+  }
+}
